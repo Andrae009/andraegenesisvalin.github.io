@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrae Genesis Valin - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a id="home-link" href="#">Home</a></li>
+      <li><a id="about-link" href="#">About Me</a></li>
+      <li><a id="projects-link" href="#">Projects</a></li>
+      <li><a id="skills-link" href="#">Skills</a></li>
+      <li><a id="contact-link" href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <header>
-        <h1 class="glow">Andrae Genesis Valin</h1>
-        <p class="subtitle">Aspiring ICT Professional | Developer | Student</p>
-    </header>
+  <!-- Panels -->
+  <div id="home-panel" class="panel">
+    <div class="panel-content">
+      <span class="close-panel">&times;</span>
+      <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
+      <p>Aspiring IT Student | Java Enthusiast</p>
+    </div>
+  </div>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <div id="about-panel" class="panel">
+    <div class="panel-content">
+      <span class="close-panel">&times;</span>
+      <h2>About Me</h2>
+      <p>
+        I'm a Grade 11 ICT student passionate about programming and problem-solving. 
+        I'm currently learning Java and building projects like a Teacher Management System.
+      </p>
+    </div>
+  </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm <b>Andrae Genesis Valin</b>, a passionate Grade 11 ICT student at Muntinlupa National High School. I specialize in **Java, MySQL, and software development**.</p>
-    </section>
+  <div id="projects-panel" class="panel">
+    <div class="panel-content">
+      <span class="close-panel">&times;</span>
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Teacher Management System</h3>
+        <p>A Java-based system for managing teacher records in schools.</p>
+        <a href="#">View Project</a>
+      </div>
+      <!-- Add more projects here -->
+    </div>
+  </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">Java</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">Software Development</div>
-            <div class="skill">Cybersecurity</div>
-        </div>
-    </section>
+  <div id="skills-panel" class="panel">
+    <div class="panel-content">
+      <span class="close-panel">&times;</span>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Java</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+      </div>
+    </div>
+  </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Teacher Management System</h3>
-                <p>A system for managing teachers' information efficiently.</p>
-            </div>
-            <div class="project-card">
-                <h3>Photobooth System</h3>
-                <p>A fun system for capturing and managing event photos.</p>
-            </div>
-            <div class="project-card">
-                <h3>Personal Portfolio Website</h3>
-                <p>A futuristic portfolio to showcase my skills.</p>
-            </div>
-        </div>
-    </section>
+  <div id="contact-panel" class="panel">
+    <div class="panel-content">
+      <span class="close-panel">&times;</span>
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">Your GitHub</a></p>
+    </div>
+  </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:andraevalin3@gmail.com">andraevalin3@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Andrae009" target="_blank">Andrae009</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Andrae Genesis Valin | All Rights Reserved</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
