@@ -1,63 +1,63 @@
-/* Futuristic Background */
+/* Body Styling */
 body {
     background-color: #0d0d0d;
     color: #00ffcc;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Glowing Text */
+/* Header */
+header {
+    margin-bottom: 30px;
+}
+
 h1 {
     font-size: 3em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
     animation: glow 1.5s infinite alternate;
 }
 
-/* Subtitle */
-p {
+.tagline {
     font-size: 1.2em;
-    opacity: 0;
-    animation: slideIn 1.5s ease-in-out forwards;
+    color: #b3fff0;
 }
 
-/* Glowing Button */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: transparent;
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00ffcc;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Achievements */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* Contact Links */
+a {
     color: #00ffcc;
-    font-size: 1.2em;
-    font-weight: bold;
-    border: 2px solid #00ffcc;
-    border-radius: 5px;
     text-decoration: none;
-    transition: 0.4s;
-    box-shadow: 0 0 10px #00ffcc;
+    font-weight: bold;
 }
 
-.btn:hover {
-    background: #00ffcc;
-    color: black;
-    box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-}
-
-/* Animated Background */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #001f3f, #000000, #001f3f);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-    z-index: -1;
+a:hover {
+    text-shadow: 0 0 10px #00ffcc;
 }
 
 /* Animations */
@@ -66,18 +66,7 @@ body::before {
     to { opacity: 1; }
 }
 
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 @keyframes glow {
-    from { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; }
-    to { text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc; }
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    from { text-shadow: 0 0 10px #00ffcc; }
+    to { text-shadow: 0 0 20px #00ffcc; }
 }
