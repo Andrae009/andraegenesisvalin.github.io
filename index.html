@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrae Genesis Valin</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <title>Andrae Genesis Valin - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background"></div> <!-- Animated Background -->
     <header>
-        <h1>Andrae Genesis Valin</h1>
-        <p class="tagline">Aspiring ICT Professional | Developer | Student</p>
+        <h1 class="glitch">Andrae Genesis Valin</h1>
+        <p class="subtitle">Aspiring ICT Professional | Developer | Student</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Andrae Genesis Valin, a passionate Grade 11 ICT student at Muntinlupa National High School. I specialize in Java programming, MySQL database management, and software development.</p>
+        <p>Hello! I'm <span class="highlight">Andrae Genesis Valin</span>, a passionate Grade 11 ICT student at Muntinlupa National High School. I specialize in <span class="highlight">Java programming, MySQL database management, and software development.</span></p>
     </section>
 
     <section id="achievements">
         <h2>My Achievements</h2>
-        <ul>
-            <li>🏆 Developed a **Teacher Information Management System**</li>
-            <li>📸 Started a **Photobooth System Project**</li>
-            <li>💻 Created my **first personal website**</li>
-            <li>🎓 Studying **advanced Java and MySQL**</li>
-        </ul>
+        <div class="achievement-grid">
+            <div class="card">🏆 Developed a <b>Teacher Information Management System</b></div>
+            <div class="card">📸 Started a <b>Photobooth System Project</b></div>
+            <div class="card">💻 Created my <b>first personal website</b></div>
+            <div class="card">🎓 Studying <b>advanced Java and MySQL</b></div>
+        </div>
     </section>
 
     <section id="contact">
@@ -33,6 +39,10 @@
         <p>GitHub: <a href="https://github.com/Andrae009" target="_blank">Andrae009</a></p>
     </section>
 
-    <script src="script.js"></script> <!-- JavaScript -->
+    <footer>
+        <p>© 2025 Andrae Genesis Valin | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
