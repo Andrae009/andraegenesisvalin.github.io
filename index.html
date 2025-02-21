@@ -10,15 +10,60 @@
         .hero { background: #007bff; color: white; padding: 60px 20px; text-align: center; }
         .section { padding: 50px 20px; }
         .footer { background: #222; color: white; text-align: center; padding: 20px; }
-    </style>
-</head>
-<body>
+    </styl<body>
 
     <!-- Hero Section -->
     <div class="hero">
         <h1>Hello, I'm Andrae Genesis Valin</h1>
         <p>Welcome to my personal website, where I showcase my achievements.</p>
-    </div>
+    </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrae Genesis Valin - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Andrae Genesis Valin</h1>
+        <p class="fade-in">Welcome to my personal website!</p>
+    </header>
+
+    <section class="fade-in">
+        <h2>About Me</h2>
+        <p>I'm a passionate ICT student interested in programming, web development, and technology.</p>
+    </section>
+
+    <section class="fade-in">
+        <h2>My Achievements</h2>
+        <ul>
+            <li>🏆 Completed multiple programming projects</li>
+            <li>💻 Developed a teacher management system</li>
+            <li>📸 Working on a photobooth system</li>
+        </ul>
+    </section>
+
+    <section class="fade-in">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:andraevalin3@gmail.com">andraevalin3@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Andrae Genesis Valin. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fade-in animation
+        document.addEventListener("DOMContentLoaded", function() {
+            let elements = document.querySelectorAll('.fade-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => el.style.opacity = "1", index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
 
     <!-- Achievements Section -->
     <div class="section container">
