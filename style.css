@@ -3,6 +3,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  background: #f4f4f4;
+  color: #333;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -42,6 +44,11 @@ nav .nav-links {
 nav .nav-links a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #6a11cb;
 }
 
 #theme-toggle {
@@ -49,11 +56,13 @@ nav .nav-links a {
   border: none;
   color: #fff;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 /* Home Section */
 .home {
-  background: #f4f4f4;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
   padding: 5rem 0;
   text-align: center;
 }
@@ -67,15 +76,21 @@ nav .nav-links a {
 
 .home .tagline {
   font-size: 1.2rem;
-  color: #555;
+  margin-bottom: 2rem;
 }
 
 .home .btn {
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #333;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.home .btn:hover {
+  background: #6a11cb;
+  color: #fff;
 }
 
 /* About Section */
@@ -85,6 +100,10 @@ nav .nav-links a {
 
 .about .skills-progress {
   margin-top: 2rem;
+}
+
+.about .skill {
+  margin-bottom: 1rem;
 }
 
 .about .progress-bar {
@@ -97,14 +116,16 @@ nav .nav-links a {
 .about .progress-bar::after {
   content: '';
   display: block;
-  background: #333;
+  background: #6a11cb;
   height: 100%;
   border-radius: 5px;
+  width: 0;
+  transition: width 1s ease-in-out;
 }
 
 /* Projects Section */
 .projects {
-  background: #f4f4f4;
+  background: #fff;
   padding: 5rem 0;
 }
 
@@ -115,15 +136,34 @@ nav .nav-links a {
 }
 
 .projects .project-card {
-  background: #fff;
+  background: #f4f4f4;
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.projects .project-card:hover {
+  transform: translateY(-10px);
 }
 
 .projects .project-card img {
   width: 100%;
   border-radius: 5px;
+}
+
+.projects .project-card h3 {
+  margin: 1rem 0;
+}
+
+.projects .project-card .btn {
+  background: #6a11cb;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 /* Skills Section */
@@ -161,12 +201,17 @@ nav .nav-links a {
 }
 
 .contact form button {
-  background: #333;
+  background: #6a11cb;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact form button:hover {
+  background: #2575fc;
 }
 
 /* Footer */
@@ -184,7 +229,12 @@ footer .social-links {
   margin-bottom: 1rem;
 }
 
-footer .social-links img {
-  width: 24px;
-  height: 24px;
+footer .social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #6a11cb;
 }
