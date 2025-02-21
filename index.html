@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Andrae Genesis Valin’s Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+  <!-- Canvas for Code Typing Animation -->
+  <canvas id="code-canvas"></canvas>
+
+  <!-- Toggle Button for Code Typing -->
+  <button id="code-toggle" class="code-toggle">
+    <i class="fas fa-code"></i> Toggle Code Animation
+  </button>
+
   <!-- Navigation Bar -->
   <nav>
+    <h1 class="portfolio-title">Andrae Genesis Valin’s Portfolio</h1>
     <ul>
       <li><a id="home-link" href="#">Home</a></li>
       <li><a id="about-link" href="#">About Me</a></li>
@@ -17,62 +26,16 @@
       <li><a id="skills-link" href="#">Skills</a></li>
       <li><a id="contact-link" href="#">Contact</a></li>
     </ul>
+    <div class="theme-toggle">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
   </nav>
 
-  <!-- Panels -->
-  <div id="home-panel" class="panel">
-    <div class="panel-content">
-      <span class="close-panel">&times;</span>
-      <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-      <p>Aspiring IT Student | Java Enthusiast</p>
-    </div>
-  </div>
-
-  <div id="about-panel" class="panel">
-    <div class="panel-content">
-      <span class="close-panel">&times;</span>
-      <h2>About Me</h2>
-      <p>
-        I'm a Grade 11 ICT student passionate about programming and problem-solving. 
-        I'm currently learning Java and building projects like a Teacher Management System.
-      </p>
-    </div>
-  </div>
-
-  <div id="projects-panel" class="panel">
-    <div class="panel-content">
-      <span class="close-panel">&times;</span>
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Teacher Management System</h3>
-        <p>A Java-based system for managing teacher records in schools.</p>
-        <a href="#">View Project</a>
-      </div>
-      <!-- Add more projects here -->
-    </div>
-  </div>
-
-  <div id="skills-panel" class="panel">
-    <div class="panel-content">
-      <span class="close-panel">&times;</span>
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">Java</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact-panel" class="panel">
-    <div class="panel-content">
-      <span class="close-panel">&times;</span>
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername">Your GitHub</a></p>
-    </div>
-  </div>
+  <!-- Landing Page -->
+  <section id="home">
+    <h1>Hi, I'm <span class="highlight">Andrae Genesis Valin</span></h1>
+    <p>Aspiring IT Student | Java Enthusiast</p>
+  </section>
 
   <!-- JavaScript File -->
   <script src="script.js"></script>
