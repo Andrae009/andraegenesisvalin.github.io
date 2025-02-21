@@ -1,5 +1,14 @@
-// Wait for page to load before animations
+// Smooth Fade-in for Sections
 document.addEventListener("DOMContentLoaded", function() {
-    let subtitle = document.querySelector("p");
-    subtitle.style.opacity = "1";
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+        section.style.opacity = "0";
+        section.style.transition = "opacity 1.5s ease-in-out";
+    });
+
+    setTimeout(() => {
+        sections.forEach(section => {
+            section.style.opacity = "1";
+        });
+    }, 500);
 });
