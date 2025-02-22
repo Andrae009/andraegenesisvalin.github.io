@@ -3,110 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICT Student Portfolio</title>
+  <title>Personal Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <a href="#home" class="logo">My Portfolio</a>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Jigar</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle"><i class="fas fa-moon"></i></button>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="container">
-      <div class="hero">
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p class="tagline">ICT Student | Aspiring Developer</p>
-        <a href="#projects" class="btn">View My Work</a>
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Hi There, I'm <span class="highlight">Jigar Sable</span></h1>
+      <p>I Am Into Web Development!</p>
+      <button class="btn"><a href="#about">About Me</a></button>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
       </div>
+    </div>
+    <div class="hero-image">
+      <!-- Add your avatar or illustration here -->
+      <img src="avatar.png" alt="Your Avatar">
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm an ICT student passionate about web development, programming, and technology. I enjoy building projects that solve real-world problems and constantly strive to learn new skills.</p>
-      <div class="skills-progress">
-        <div class="skill"><span>HTML</span><div class="progress-bar" data-width="90%"></div></div>
-        <div class="skill"><span>CSS</span><div class="progress-bar" data-width="85%"></div></div>
-        <div class="skill"><span>JavaScript</span><div class="progress-bar" data-width="80%"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x300" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>A responsive website built with HTML, CSS, and JavaScript.</p>
-          <a href="#" class="btn">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x300" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>A web app for task management using React.js.</p>
-          <a href="#" class="btn">View Project</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
-        <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-        <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
-        <div class="skill-item"><i class="fab fa-react"></i><span>React</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="social-links">
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-      </div>
-      <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-    </div>
-  </footer>
-
+  <!-- Add other sections like About, Skills, etc. -->
+  
   <script src="script.js"></script>
 </body>
 </html>
